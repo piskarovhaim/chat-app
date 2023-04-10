@@ -1,0 +1,62 @@
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  overflow: auto;
+}
+
+.messages-list-container {
+  border-style: solid;
+  border-color: #61dafb;
+  border-width: 2px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  flex: 1;
+  overflow: auto;
+}
+
+.error-fetchMessages {
+  color: red;
+  font-size: 16px;
+}
+
+.messages-list-loading {
+  font-size: 14px;
+}
+
+.message-container {
+  font-size: 16px;
+  overflow-wrap: break-word;
+  padding: 10px;
+  border-style: solid;
+  border-color: whitesmoke;
+  border-width: 1px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 50%;
+}
+
+.message-container.me {
+  color: #282c34;
+  background-color: whitesmoke;
+}
+
+.message-container-title {
+  display: flex;
+  flex-direction: row;
+  color: #61dafb;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.message-container-title.me {
+  color: #298199;
+}
+@media only screen and (max-width: 600px) {
+  .message-container {
+    width: 90%;
+  }
+}
